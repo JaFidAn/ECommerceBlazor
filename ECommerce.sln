@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceClient", "ECommerc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommercyModels", "ECommercyModels\ECommercyModels.csproj", "{EA5F5032-FFFE-4144-BC71-66E866DD676D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceBusiness", "ECommerceBusiness\ECommerceBusiness.csproj", "{FD5BC504-6039-4034-82C6-753347A61AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceCommon", "ECommerceCommon\ECommerceCommon.csproj", "{B6CBA545-A253-4B78-A343-9A6F5EFA96B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceDataAccess", "ECommerceDataAccess\ECommerceDataAccess.csproj", "{5EAB36B9-863C-432C-878D-1EF4C0E730E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +36,17 @@ Global
 		{EA5F5032-FFFE-4144-BC71-66E866DD676D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5F5032-FFFE-4144-BC71-66E866DD676D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5F5032-FFFE-4144-BC71-66E866DD676D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5BC504-6039-4034-82C6-753347A61AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5BC504-6039-4034-82C6-753347A61AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5BC504-6039-4034-82C6-753347A61AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5BC504-6039-4034-82C6-753347A61AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6CBA545-A253-4B78-A343-9A6F5EFA96B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6CBA545-A253-4B78-A343-9A6F5EFA96B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6CBA545-A253-4B78-A343-9A6F5EFA96B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6CBA545-A253-4B78-A343-9A6F5EFA96B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAB36B9-863C-432C-878D-1EF4C0E730E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAB36B9-863C-432C-878D-1EF4C0E730E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAB36B9-863C-432C-878D-1EF4C0E730E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAB36B9-863C-432C-878D-1EF4C0E730E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

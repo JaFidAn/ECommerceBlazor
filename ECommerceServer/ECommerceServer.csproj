@@ -2,6 +2,17 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ECommercyModels\ECommercyModels.csproj" />
+    <ProjectReference Include="..\ECommerceDataAccess\ECommerceDataAccess.csproj" />
+    <ProjectReference Include="..\ECommerceBusiness\ECommerceBusiness.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
   </ItemGroup>
 
   <PropertyGroup>
