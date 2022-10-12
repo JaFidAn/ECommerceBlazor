@@ -30,6 +30,7 @@ namespace ECommerceBusiness.Repository
             // };
             //instead of above mapping below we use AutoMapper
             Category category = _mapper.Map<CategoryDTO, Category>(objDTO);
+            category.CreatedDate = DateTime.Now;
 
             _db.Categories.Add(category);
             _db.SaveChanges();
