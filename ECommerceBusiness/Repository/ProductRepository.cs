@@ -33,7 +33,7 @@ namespace ECommerceBusiness.Repository
 
         public async Task<int> Delete(int id)
         {
-            Product deletedProduct = await _db.Products.FirstOrDefaultAsync(c => c.Id == id);
+            var deletedProduct = await _db.Products.FirstOrDefaultAsync(p => p.Id == id);
             if (deletedProduct != null)
             {
                 _db.Products.Remove(deletedProduct);
@@ -44,7 +44,7 @@ namespace ECommerceBusiness.Repository
 
         public async Task<ProductDTO> Get(int id)
         {
-            Product product = await _db.Products.Include(u => u.Category).FirstOrDefaultAsync(c => c.Id == id);
+            var product = await _db.Products.Include(c => c.Category).Include(pp => pp.ProductPrices).FirstOrDefaultAsync(p => p.Id == id);
             if (product != null)
             {
                 return _mapper.Map<Product, ProductDTO>(product);
@@ -54,12 +54,12 @@ namespace ECommerceBusiness.Repository
 
         public async Task<IEnumerable<ProductDTO>> GetAll()
         {
-            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(_db.Products.Include(u => u.Category));
+            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(_db.Products.Include(u => u.Category).Include(pp => pp.ProductPrices));
         }
 
         public async Task<ProductDTO> Update(ProductDTO objDTO)
         {
-            Product updatedProduct = await _db.Products.FirstOrDefaultAsync(c => c.Id == objDTO.Id);
+            var updatedProduct = await _db.Products.FirstOrDefaultAsync(c => c.Id == objDTO.Id);
             if (updatedProduct != null)
             {
                 updatedProduct.Name = objDTO.Name;
