@@ -14,6 +14,7 @@ namespace ECommerceBusiness.Mapper
         {
             CreateMap<Category, CategoryDTO>().ReverseMap(); //ReverseMapp will Map from CategoryDTO to Category
             CreateMap<Product, ProductDTO>().ReverseMap(); //ReverseMapp will Map from ProductDTO to Product
+            CreateMap<ProductPrice, ProductPriceDTO>().ReverseMap(); //ReverseMapp will Map from ProductPriceDTO to ProductPrice
         }
     }
 }
